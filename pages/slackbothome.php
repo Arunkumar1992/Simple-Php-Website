@@ -4,12 +4,12 @@
 $datain = file_get_contents('php://input');
 $obj = json_decode($datain);
 
-if( isset( $mydata['challenge'] ) ){
+if(isset($obj['challenge'])){
   print_r($obj->challenge);
 
 }
 
-if( isset( $mydata['message'] ) ){
+if( isset( $obj['message'] ) ){
  
   print_r($obj->message);
   print_r($obj->channel);
