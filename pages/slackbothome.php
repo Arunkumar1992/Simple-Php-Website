@@ -19,8 +19,9 @@ $text = $obj->text;
   $messagetext ="Hi We recieved your message " . $text;
   $slackurl= "https://slack.com/api/chat.postMessage?";
   $posturl = $slackurl . "token=" . $token . "&channel=" . $channel . "&text=" . $messagetext . "&pretty=1";
-  echo "<br/>";
+  echo "\n";
   echo $posturl;
+    echo "\n";
     file_get_contents($posturl);
 echo file_get_contents($posturl);
 
