@@ -1,4 +1,6 @@
-
+<!DOCTYPE html>
+<html>
+<body>
 <?php
 
 $datain = file_get_contents('php://input');
@@ -22,6 +24,7 @@ $text = $obj->text;
   echo "\n";
   echo $posturl;
     echo "\n";
+    echo "<a href='" . $posturl . "'>". $posturl . "</a>";
     file_get_contents($posturl);
 echo file_get_contents($posturl);
 
@@ -33,4 +36,5 @@ echo file_get_contents($posturl);
 
 ?>
 
-
+</body>
+</html>
