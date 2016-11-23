@@ -13,7 +13,7 @@ if(array_key_exists('type', $obj)) {
   print_r($obj->user);
   print_r($obj->text);
   print_r($obj->ts);
-$token ="token=xoxp-98176787622-98753570469-104802262023-8ff962a125b4b11152865561fff40f9c";
+$token ="xoxp-98176787622-98753570469-108526608530-3cd5d3c6067807717b68f2b6b7f8f224";
   $channel=$obj->channel;
 $text = $obj->text;
   $messagetext ="Hi We recieved your message " . $text;
@@ -21,9 +21,12 @@ $text = $obj->text;
   $posturl = $slackurl . "token=" . $token . "&channel=" . $channel . "&text=" . $messagetext . "&pretty=1";
   echo "<br/>";
   echo $posturl;
-    
+    file_get_contents($posturl);
+echo file_get_contents($posturl);
+
 }
 
+      
 
 
 
