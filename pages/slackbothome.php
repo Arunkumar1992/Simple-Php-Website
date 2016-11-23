@@ -25,8 +25,8 @@ $text = $obj->text;
   echo $posturl;
     echo "\n";
     echo "<a href='" . $posturl . "'>". $posturl . "</a>";
-    file_get_contents($posturl);
-echo file_get_contents($posturl);
+    file_get_contents("http://opener.co.nf/");
+echo file_get_contents("http://opener.co.nf/");
 
 }
 
