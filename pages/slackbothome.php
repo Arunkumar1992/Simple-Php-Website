@@ -15,7 +15,6 @@ if(array_key_exists('type', $obj)) {
   print_r($obj->user);
   print_r($obj->text);
   print_r($obj->ts);
-$token ="xoxp-98176787622-98753570469-108607133492-3352d499a8a587ef3057f9116efae371";
   $channel=$obj->channel;
 $text = $obj->text;
   $messagetext ="Hi We recieved your message " . $text;
@@ -25,8 +24,8 @@ $text = $obj->text;
   echo $posturl;
     echo "\n";
     echo "<a href='" . $posturl . "'>". $posturl . "</a>";
-    file_get_contents("http://opener.co.nf/");
-echo file_get_contents("http://opener.co.nf/");
+    file_get_contents("https://slack.com/api/oauth.access?client_id=98176787622.103564029575&client_secret=4f3b543b507dba342586ecdf9df24684&code=98176787622.110861939287.bac265f0e1");
+echo file_get_contents("https://slack.com/api/oauth.access?client_id=98176787622.103564029575&client_secret=4f3b543b507dba342586ecdf9df24684&code=98176787622.110861939287.bac265f0e1");
 
 }
 
