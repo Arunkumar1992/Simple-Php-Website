@@ -10,4 +10,10 @@ curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
 
 $response = curl_exec( $ch );
 echo $response;
+
+$obj = json_decode($response);
+//  print_r($obj);
+if(array_key_exists('joke', $obj)) {
+  print_r($obj->joke);
+}
 ?>
