@@ -1,3 +1,3 @@
 <?php
-prem is coming from greek...
+echo "prem is coming from greek"
 ?>
