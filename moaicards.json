@@ -1,0 +1,27 @@
+{
+  "cards": [
+    // Card 1
+    {
+      cardTitle: 'TestWebhookTitle', // Card Title
+      cardSubtitle: 'TestWebhookSubtitle', // Card Subtitle
+      cardImage: 'https://www.motion.ai/images/logo_molecules_gradient.png', // Source URL for image
+      cardLink: 'https://www.motion.ai', // Click through URL
+      buttons: [{
+        buttonText: 'WebhookButton 1', // Button Call to Action
+        buttonType: 'url', // either 'url' or 'module'
+        target:  'https://dashboard.motion.ai'// Module ID or URL
+      }]
+    },
+    // Card 2
+    {
+      cardTitle: 'TestWebhookTitle2',
+      cardSubtitle: 'TestWebhookSubtitle2',
+      cardImage: 'https://www.motion.ai/images/logo_molecules_gradient.png',
+      cardLink: 'https://www.motion.ai',
+      buttons: [{
+        buttonText: 'WebhookButton 2',
+        buttonType: 'url',
+        target:  'https://dashboard.motion.ai'
+      }]
+    }
+}
