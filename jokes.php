@@ -1,4 +1,6 @@
 <?php
+header('Content-Type: application/json');
+
 $url = 'http://api.icndb.com/jokes/random/';
 $ch = curl_init( $url );
 curl_setopt( $ch, CURLOPT_POST, 1);
