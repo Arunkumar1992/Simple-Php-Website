@@ -14,7 +14,8 @@ echo $response;
 $obj = json_decode($response);
 
 $joke = $obj['value']['joke'];
-echo $joke
+echo $joke;
+echo "joke printed";
 //  print_r($obj);
 
 ?>
