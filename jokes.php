@@ -12,8 +12,9 @@ $response = curl_exec( $ch );
 echo $response;
 
 $obj = json_decode($response);
+
+$joke = $obj['value']['joke'];
+echo $joke
 //  print_r($obj);
-if(array_key_exists('joke', $obj)) {
-  print_r($obj->joke);
-}
+
 ?>
